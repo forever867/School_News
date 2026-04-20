@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link th:href="@{/css/comm.css}" rel="stylesheet">
+    <script th:src="@{/js/comm.js}"></script>
+</head>
+<body>
+<form th:action="@{/}" method="post">
+    <div>
+        <h2>欢迎用户登录</h2>
+
+        <div>学号:
+            <input type="text" id="userPhone" name="userPhone" th:value="${userPhone}">
+        </div>
+        <div>教务系统密码:
+            <input type="password" id="userPass" name="userPass" th:value="${userPass}">
+        </div>
+
+        <div th:text="${prompt}" style="color:blue;"></div>
+
+        <button type="submit">立即登录</button>
+    </div>
+</form>
+</body>
+</html>
