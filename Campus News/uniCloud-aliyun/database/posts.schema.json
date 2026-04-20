@@ -1,0 +1,31 @@
+{
+  "bsonType": "object",
+  "required": ["title", "content", "schoolId", "time"],
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+  },
+  "properties": {
+    "_id": {
+      "bsonType": "objectId"
+    },
+    "title": {
+      "bsonType": "string",
+      "description": "帖子标题"
+    },
+    "content": {
+      "bsonType": "string",
+      "description": "帖子内容"
+    },
+    "schoolId": {
+      "bsonType": "int",
+      "description": "学校ID"
+    },
+    "time": {
+      "bsonType": "string",
+      "description": "发布时间"
+    }
+  }
+}
